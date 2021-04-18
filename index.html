@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="weather-wrapper">
+      <div class="grid">
+      <div class="weather-header">
+        <h1>Weather: <span class="userGeoCity"></span> </h1>
+        <p class="date"> <span class="time"></span></p>
+        <div class="search-bar">
+          <label for="gsearch">Search Weather:</label>
+          <input type="search" id="weather-search" name="weatherSearch">
+          <button class="btn">Search</button>
+        </div>
+      </div>
+      <div class="weather-display-block">
+        <div class="search-side-bar">
+          <div class="search-list">
+            <h3>Recent Searches</h3>
+            <ul class="recentSearches"></ul>
+          </div>
+        </div>
+        <div class="weather-current">
+          <div class="card-inner">
+          <h3>Current Weather</h3>
+            <p class = "currentWeatherIcon">weather icon</p>
+            <p class = "currentTemp"></p>
+            <p class = "currentWeather"> current weather</p>
+            <p class = "currentUVIndex"> current UVI</p>
+            <p class = "currentHumidity"> <span>current humidity</span></p>
+            <p class = "currentWindSpeed"> current wind speed</p>
+          </div>
+        </div>
+          <div class="weather-fiveDay-block">
+          <div class="card-inner">
+            <h3>5 Day Forecast</h3>
+            <div class = "card 1">
+              <p class="day"></p>
+              <p class = "dayOneicon"></p>
+              <p class = "dayOneWeather"></p>
+              <p class = "dayOneTemp"></p>
+              <p class = "dayOneUVI"></p>
+              <p class = "dayOneWindSpeed"></p>
+              <p class = "dayOneHumidity"></p>
+            </div>
+            <div class = "card 2">
+              <p class="day"></p>
+              <p class = "dayTwoIcon"></p>
+              <p class = "dayTwoWeather"></p>
+              <p class = "dayTwoTemp"></p>
+              <p class = "dayTwoUVI"></p>
+              <p class = "dayTwoWindSpeed"></p>
+              <p class = "dayTwoHumidity"></p>
+            </div>
+            <div class = "card 3">
+              <p class="day"></p>
+              <p class = "dayThreeIcon"></p>
+              <p class = "dayThreeWeather"></p>
+              <p class = "dayThreeTemp"></p>
+              <p class = "dayThreeUVI"></p>
+              <p class = "dayThreeWindSpeed"></p>
+              <p class = "dayThreeHumidity"></p>
+            </div>
+            <div class = "card 4">
+              <p class="day"></p>
+              <p class = "dayFourIcon"></p>
+              <p class = "dayFourWeather"></p>
+              <p class = "dayFourTemp"></p>
+              <p class = "dayFourUVI"></p>
+              <p class = "dayFourWindSpeed"></p>
+              <p class = "dayFourHumidity"></p>
+            </div>
+            <div class = "card 5">
+              <p class="day"></p>
+              <p class = "dayFiveIcon"></p>
+              <p class = "dayFiveWeather"></p>
+              <p class = "dayFiveTemp"></p>
+              <p class = "dayFiveUVI"></p>
+              <p class = "dayFiveWindSpeed"></p>
+              <p class = "dayFiveHumidity"></p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="./java.js" /></script>
+  </body>
+</html>
